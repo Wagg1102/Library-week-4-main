@@ -1,0 +1,6 @@
+name = "Library-week-4"
+main = "./functions/index.js"
+
+[[routes]]
+pattern = "https://library-bmh.pages.dev/*" 
+script = "Library-week-4"

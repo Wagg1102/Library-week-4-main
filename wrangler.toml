@@ -1,6 +1,0 @@
-name = "Library-week-4-main"
-main = "./functions/index.js"
-
-[[routes]]
-pattern = "https://9f6b56b2.library-week-4-main.pages.dev/*"
-script = "Library-week-4-main"

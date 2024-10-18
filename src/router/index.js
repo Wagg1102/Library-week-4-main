@@ -104,7 +104,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),  
+  history: createWebHistory(process.env.BASE_URL),  // 使用 process.env.BASE_URL 作为路由基础路径
   routes
 })
 

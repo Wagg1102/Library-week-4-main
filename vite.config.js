@@ -1,4 +1,3 @@
-
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -15,7 +14,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  base: import.meta.env.MODE === 'production'
+  base: process.env.NODE_ENV === 'production'
     ? '/Library-week-4-main/'  
-    : '/'  
+    : '/'
 })

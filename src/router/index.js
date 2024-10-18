@@ -1,4 +1,3 @@
-
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
@@ -16,6 +15,7 @@ import GetBookCountView from '@/views/GetBookCountView.vue'
 import WeatherView from '@/views/WeatherView.vue'
 import CountBookAPI from '@/views/CountBookAPI.vue'
 import GetAllBookAPI from '@/views/GetAllBookAPI.vue'
+
 const routes = [
   {
     path: '/',
@@ -104,7 +104,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),  
   routes
 })
 
